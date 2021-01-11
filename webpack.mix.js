@@ -13,3 +13,7 @@ mix.jigsaw()
         processCssUrls: false,
     })
     .version();
+
+if (! mix.inProduction()) {
+    mix.sourceMaps();
+}
