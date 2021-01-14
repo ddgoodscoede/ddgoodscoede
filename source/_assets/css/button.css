@@ -1,0 +1,70 @@
+@layer components {
+
+    .button {
+        @apply
+            /* Base */
+            cursor-pointer
+            /* Content */
+            py-2 px-4
+            whitespace-nowrap
+            inline-flex
+            items-center
+            justify-center
+            /*
+             Default style
+             */
+            /* Default state */
+            rounded
+            border
+            /* Hover */
+            hover:border-gray-400
+            /* Active */
+            active:border-gray-700
+            /* Focus */
+            focus:outline-none
+            focus:border-blue-500
+            focus:ring-2
+            focus:ring-blue-500
+            focus:ring-opacity-25
+        ;
+    }
+
+    .button.is-rounded {
+        @apply rounded-3xl;
+    }
+
+    .button.is-primary {
+        @apply
+            /* Default state */
+            border-transparent
+            bg-teal-400
+            /* Hover */
+            hover:bg-teal-500
+            /* Active */
+            active:bg-teal-600
+            /* Focus */
+            focus:ring-2
+            focus:ring-teal-400
+            focus:ring-opacity-25
+            /* Content */
+            text-white
+        ;
+    }
+
+    .button.is-light {
+        @apply
+            /* Default state */
+            border-transparent
+            bg-gray-100
+            /* Hover */
+            hover:bg-gray-200
+            /* Active */
+            active:bg-gray-300
+            /* Focus */
+            focus:ring-2
+            focus:ring-gray-100
+            focus:ring-opacity-25
+        ;
+    }
+
+}

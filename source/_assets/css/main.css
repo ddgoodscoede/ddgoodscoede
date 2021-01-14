@@ -1,48 +1,7 @@
+/* Tailwind */
 @import 'tailwindcss/base';
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
 
-@layer components {
-    .button {
-        @apply
-            /*Default state*/
-            rounded
-            border
-            cursor-pointer
-            /*Hover*/
-            hover:border-gray-400
-            /*Active*/
-            active:border-gray-700
-            /*Focus*/
-            focus:border-blue-500
-            focus:ring-2
-            focus:ring-blue-500
-            focus:ring-opacity-25
-            focus:outline-none
-            /*Content*/
-            py-2 px-4
-            whitespace-nowrap
-            flex
-            items-center;
-    }
-    .button.is-rounded {
-        @apply rounded-3xl;
-    }
-    .button.is-primary {
-        @apply
-            /*Default state*/
-            border-transparent
-            bg-teal-400
-            /*Hover*/
-            hover:bg-teal-500
-            /*Active*/
-            active:bg-teal-600
-
-            /*Focus*/
-            /**/
-
-            /*Content*/
-            text-white
-        ;
-    }
-}
+/* Custom components */
+@import 'button.css';
