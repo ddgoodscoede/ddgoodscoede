@@ -10,6 +10,9 @@ module.exports = {
         ]
     },
     theme: {
+        /*
+         Custom color palette
+         */
         colors: {
             transparent: 'transparent',
             current: 'currentColor',
@@ -22,7 +25,35 @@ module.exports = {
             yellow: colors.yellow,
             blue: colors.blue,
         },
-        extend: {},
+        extend: {
+            /*
+             Typography plugin (.prose class) customization
+             */
+            typography: (theme) => ({
+                DEFAULT: {
+                    css: {
+                        strong: {
+                            color: theme('colors.gray.900'),
+                            fontWeight: '600',
+                        },
+                        a: {
+                            color: theme('colors.blue.500'),
+                            textDecoration: 'none',
+                            '&:hover': {
+                                color: 'inherit',
+                            },
+                        },
+                        'a strong': {
+                            color: theme('colors.blue.700'),
+                            fontWeight: '600',
+                            '&:hover': {
+                                color: theme('colors.gray.900'),
+                            },
+                        },
+                    },
+                },
+            }),
+        },
     },
     variants: {
         extend: {
