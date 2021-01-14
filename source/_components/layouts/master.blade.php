@@ -30,17 +30,17 @@
 
         <div class="flex flex-col h-screen">
 
-            <x-navbar/>
+            <x-navbar :page="$page" />
 
             <div class="flex-1 flex flex-col overflow-y-auto">
 
-                <main class="flex-1 container mx-auto">
+                <div class="flex-1 container lg:max-w-screen-lg mx-auto">
 
                     {{ $slot }}
 
-                </main>
+                </div>
 
-                <x-footer/>
+                <x-footer :page="$page" />
 
             </div>
 
