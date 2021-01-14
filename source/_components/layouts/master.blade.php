@@ -16,7 +16,7 @@
         {{-- Styles --}}
         <link rel="stylesheet" href="{{ mix('css/main.css', 'assets/build') }}">
 
-        {{-- Script --}}
+        {{-- Scripts --}}
         <script src="{{ mix('js/main.js', 'assets/build') }}" defer></script>
 
         {{-- Page-specific --}}
