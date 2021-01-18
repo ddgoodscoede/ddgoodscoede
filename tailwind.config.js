@@ -20,6 +20,7 @@ module.exports = {
             white: colors.white,
             gray: colors.trueGray,
             green: colors.green,
+            emerald: colors.emerald,
             teal: colors.teal,
             red: colors.red,
             yellow: colors.yellow,
@@ -32,6 +33,8 @@ module.exports = {
             typography: (theme) => ({
                 DEFAULT: {
                     css: {
+                        // Customization example kept for reference
+                        /*
                         strong: {
                             color: theme('colors.gray.900'),
                             fontWeight: '600',
@@ -50,6 +53,7 @@ module.exports = {
                                 color: theme('colors.gray.900'),
                             },
                         },
+                        */
                     },
                 },
             }),
@@ -60,6 +64,8 @@ module.exports = {
             backgroundColor: ['active'],
             borderWidth: ['active'],
             borderColor: ['active', 'focus'],
+            margin: ['first', 'last'],
+            zIndex: ['hover', 'active'],
         },
     },
     plugins: [
