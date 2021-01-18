@@ -3,7 +3,7 @@
     <x-section>
         <x-box class="text-center">
 
-            <h2 class="title is-2">Безопасность. Анонимность. Начни покупки на dd</h2>
+            <h2 class="title is-2">Безопасность. Анонимность. <br> Начни покупки на dd</h2>
             <a
                 href="{{ $page->clearnetUrl }}"
                 class="button is-primary is-rounded h-48 shadow-md"
@@ -13,7 +13,7 @@
                     https://ddru.cc
                 </strong>
             </a>
-            <p>Зайди, выбери, купи.</p>
+            <p>Выбрал, снял, употребил.</p>
 
         </x-box>
     </x-section>
@@ -78,6 +78,15 @@
         <x-box>
 
             <h1 class="title is-1">Безопасность</h1>
+
+            <div class="prose">
+                Пользователи даркмаркетов - постоянная цель фишинговых атак.<br>
+                Чтобы не потерять свои деньги - обязательно проверяй адрес сайта!<br>
+                Официальный список зеркал всегда опубликован на самом dd Marketplace и подписан PGP ключом площадки, приводим его здесь:
+                <pre><code>
+                    Duis platea velit et id sociis ridiculus eu tristique lacinia facilisis erat, nullam sapien consectetur vivamus euismod mollis eros est curabitur vel. Lobortis curae tempus netus tempor gravida vestibulum ut, condimentum dignissim aliquam eros praesent eget elit, mollis placerat urna vulputate vehicula dapibus. Mus nunc netus mollis elementum et amet libero non, integer montes morbi lacinia nostra lobortis pretium. Lorem dignissim cum sollicitudin morbi dolor dapibus massa torquent proin diam, at egestas porttitor tincidunt cursus sociis vulputate ultrices taciti. Sollicitudin faucibus nunc ut non rhoncus turpis sociis luctus felis, et himenaeos quam taciti leo phasellus torquent eu ultricies, pellentesque placerat vestibulum vitae tortor dictum nascetur mi.
+                </code></pre>
+            </div>
 
         </x-box>
     </x-section>
