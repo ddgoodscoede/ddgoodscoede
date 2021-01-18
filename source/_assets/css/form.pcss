@@ -1,0 +1,97 @@
+@layer components {
+    /*
+     Form field
+     */
+    .field {
+        @apply mt-3 first:mt-0;
+    }
+
+    /*
+     Form control (input, button, etc.) wrapper
+     */
+    .control {
+        @apply relative clear-both;
+    }
+
+    /*
+     Field with addons
+     */
+    .field.has-addons {
+        @apply flex justify-start;
+
+        .control:not(:only-child) {
+
+            &:not(:last-child) {
+                @apply -mr-px;
+            }
+
+            &:first-child {
+                .input, .button {
+                    @apply rounded-r-none;
+                }
+            }
+
+            &:not(:first-child):not(:last-child) {
+                .input, .button {
+                    @apply rounded-none;
+                }
+            }
+
+            &:last-child {
+                .input, .button {
+                    @apply rounded-l-none;
+                }
+            }
+
+            .input, .button {
+                @apply hover:z-10 focus:z-20;
+            }
+
+        }
+
+        .control.is-expanded {
+            @apply flex-1;
+        }
+    }
+
+    /*
+     Inputs
+     */
+    .input {
+        @apply
+            /* Base */
+            relative
+            w-full
+            max-w-full
+            /* Content */
+            inline-flex
+            items-center
+            justify-start
+            px-3
+            py-2
+            leading-6
+
+            /*
+             Default style
+             */
+            border
+            border-solid
+            border-gray-300
+            rounded
+            shadow-inner
+            /* Hover */
+            hover:border-gray-400
+            /* Focus */
+            focus:outline-none
+            focus:border-blue-500
+            focus:ring-2
+            focus:ring-blue-500
+            focus:ring-opacity-25
+        ;
+    }
+
+    .input[readonly] {
+        @apply shadow-none;
+    }
+
+}
