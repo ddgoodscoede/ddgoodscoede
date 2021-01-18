@@ -7,9 +7,11 @@ mix.setPublicPath('source/assets/build');
 
 mix.jigsaw()
     .js('source/_assets/js/main.js', 'js')
-    .postCss('source/_assets/css/main.css', 'css', [
+    .postCss('source/_assets/css/main.pcss', 'css', [
         require('postcss-import'),
+        require('postcss-nested'),
         require('tailwindcss'),
+        require('autoprefixer'),
     ])
     .options({
         processCssUrls: false,
