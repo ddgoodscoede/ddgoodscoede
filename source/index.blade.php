@@ -2,52 +2,82 @@
 
     <x-section>
         <x-box class="text-center">
-            <h2 class="text-2xl font-bold leading-snug mb-4">Большая зелёная кнопка</h2>
+
+            <h2 class="title is-2">Безопасность. Анонимность. Начни покупки на dd</h2>
             <a
                 href="{{ $page->clearnetUrl }}"
-                class="button is-primary is-rounded h-48"
+                class="button is-primary is-rounded h-48 shadow-md"
             >
                 <strong>
-                    Войти на dd через dd2web<br>
+                    Войти на Диди через dd2web<br>
                     https://ddru.cc
                 </strong>
             </a>
+            <p>Зайди, выбери, купи.</p>
+
         </x-box>
     </x-section>
 
     <x-section>
         <x-box>
 
-            <div style="max-width: 80ch">
+            <h1 class="title is-1">Зайти на dd Marketplace</h1>
 
-                <h1 class="text-4xl font-extrabold leading-tight mt-0 mb-3.5">Зайти на dd Marketplace</h1>
+            <a href="{{ $page->clearnetUrl }}">
+                <img src="{{ $page->image('screenshot.png') }}" alt="Скриншот главной страницы dd Marketplace">
+            </a>
 
-                <p>
-                    <strong>dd Marketplace</strong> - современная анонимная площадка моментальных покупок.<br>
-                    Площадка размещена в даркнете (в сети Тор) - это позволяет безопасно и анонимно покупать и продавать товары, запрещённые во многих странах.
-                </p>
+            <p class="mt-4 max-w-prose">
+                <strong>dd Marketplace</strong> - современная анонимная площадка моментальных покупок.<br>
+                Площадка размещена в даркнете (в сети Тор) - это позволяет безопасно и анонимно покупать и продавать товары, запрещённые во многих странах.
+            </p>
 
-                <p>
-                    dd Marketplace имеет только один основной адрес в сети Тор:<br>
-                    <strong>{{ $page->onionAddress }}</strong><br>
-                    Чтобы зайти на сайт по этому адресу, нужно использовать
-                    <a href="{{ url('tor-browser') }}"><strong>Tor Browser.</strong></a><br>
-                </p>
+            <div class="mt-4">
 
-                <a href="">Ссылка</a>
-                <a href=""><strong>Ссылка</strong></a>
+                <p>dd Marketplace имеет только один основной адрес в сети Тор:</p>
 
-                <p>Скачать Tor Browser</p>
-                <p>Windows, mac OS, Linux</p>
-                <p>iOS</p>
-                <p>Android</p>
-
-                <div class="flex" x-data="{ input: 'foobar' }">
-                    <input class="border rounded bg-gray-100 mr-2 px-1 py-2" x-model="input" readonly>
-                    <button type="button" class="button" @click="$clipboard(input)">Copy to Clipboard</button>
+                <div
+                    class="field has-addons"
+                    x-data="{ input: '{{ $page->onionUrl }}' }"
+                >
+                    <div class="control is-expanded">
+                        <input
+                            type="text"
+                            class="input select-all"
+                            readonly
+                            aria-label="Основной адрес dd Marketplace в сети Тор"
+                            x-model="input"
+                        >
+                    </div>
+                    <div class="control">
+                        <button
+                            class="button is-primary"
+                            @click="$clipboard(input)"
+                        >Скопировать</button>
+                    </div>
                 </div>
 
             </div>
+
+            <p class="mt-4 max-w-prose">
+                Чтобы зайти на сайт по этому адресу, нужно использовать
+                <a class="link" href="{{ url('tor-browser') }}"><strong>Tor Browser.</strong></a><br>
+            </p>
+
+            <p class="mt-4 max-2-prose">
+                Или вы всегда можете воспользоваться официальным Tor2Web сервисом по адресу
+                <a href="{{ $page->clearnetUrl }}" class="link">{{ $page->clearnetAddress }}:</a>
+            </p>
+
+            <a href="{{ $page->clearnetUrl }}" class="button is-primary mt-2">Перейти на {{ $page->clearnetAddress }}</a>
+
+        </x-box>
+    </x-section>
+
+    <x-section>
+        <x-box>
+
+            <h1 class="title is-1">Безопасность</h1>
 
         </x-box>
     </x-section>
