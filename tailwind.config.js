@@ -33,19 +33,20 @@ module.exports = {
             typography: (theme) => ({
                 DEFAULT: {
                     css: {
-                        // Customization example kept for reference
-                        /*
+                        color: theme('colors.gray.900'),
                         strong: {
                             color: theme('colors.gray.900'),
                             fontWeight: '600',
                         },
                         a: {
-                            color: theme('colors.blue.500'),
+                            color: theme('colors.blue.600'),
                             textDecoration: 'none',
                             '&:hover': {
-                                color: 'inherit',
+                                textDecoration: 'underline',
                             },
                         },
+                        // Customization example kept for reference
+                        /*
                         'a strong': {
                             color: theme('colors.blue.700'),
                             fontWeight: '600',
@@ -57,6 +58,13 @@ module.exports = {
                     },
                 },
             }),
+            /*
+             Custom values for aspect-ratio plugin
+             */
+            aspectRatio: {
+                521: '521',
+                360: '360',
+            },
         },
     },
     variants: {
