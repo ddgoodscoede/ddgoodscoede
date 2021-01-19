@@ -14,10 +14,10 @@
         <meta name="Onion-Location" content="http://ddgoodscoede23n56nlrblsudrlnhgyjwtq5cbpqn4zv24ff7hwvakqd.onion/">
 
         {{-- Styles --}}
-        <link rel="stylesheet" href="{{ mix('css/main.css', 'assets/build') }}">
+        <link rel="stylesheet" href="{{ mix('css/main.css') }}">
 
         {{-- Scripts --}}
-        <script src="{{ mix('js/main.js', 'assets/build') }}" defer></script>
+        <script src="{{ mix('js/main.js') }}" defer></script>
 
         {{-- Page-specific --}}
         <link rel="canonical" href="{{ $page->getUrl() }}">

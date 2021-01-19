@@ -8,7 +8,7 @@
         >
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         
-        <link rel="stylesheet" href="{{ mix('css/main.css', 'assets/build') }}">
+        <link rel="stylesheet" href="{{ mix('css/main.css') }}">
 
         <title>Tailwind!</title>
     </head>
