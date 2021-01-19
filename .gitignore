@@ -1,13 +1,22 @@
 ### Project ###
 
+# Resulting builds for local and staging environments
 build_local
-cache
+build_staging
+
+# Dependencies
 node_modules
 vendor
-npm-debug.log
-yarn-error.log
-build_staging
+
+# Stuff that's built by Mix
 source/assets/build
+source/assets/css
+source/assets/js
+source/assets/mix-manifest.json
+
+# Misc
+cache
+npm-debug.log
 
 
 
