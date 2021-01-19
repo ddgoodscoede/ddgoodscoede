@@ -44,7 +44,7 @@
                     <div class="mt-1">
                         <a class="link inline-flex items-start flex-wrap align-top" href="https://torproject.org/ru/">
                             <span class="flex-grow-0 flex-shrink-0 inline-flex items-center justify-center h-6 w-6 mr-1">
-                                <i class="icss-external-link"></i>
+                                <i class="far fa-external-link-alt"></i>
                             </span>
                             <span>torproject.org</span>
                         </a>
