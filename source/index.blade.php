@@ -23,53 +23,39 @@
 
             <h1 class="title is-1">Зайти на dd Marketplace</h1>
 
-            <a href="{{ $page->clearnetUrl }}">
-                <img src="{{ $page->image('screenshot.png') }}" alt="Скриншот главной страницы dd Marketplace">
-            </a>
+            <div class="space-y-5">
 
-            <p class="mt-4 max-w-prose">
-                <strong>dd Marketplace</strong> - современная анонимная площадка моментальных покупок.<br>
-                Площадка размещена в даркнете (в сети Тор) - это позволяет безопасно и анонимно покупать и продавать товары, запрещённые во многих странах.
-            </p>
+                <a href="{{ $page->clearnetUrl }}">
+                    <img src="{{ $page->image('screenshot.png') }}" alt="Скриншот главной страницы dd Marketplace">
+                </a>
 
-            <div class="mt-4">
+                <p class="max-w-prose">
+                    <strong>dd Marketplace</strong> - современная анонимная площадка моментальных покупок.<br>
+                    Площадка размещена в даркнете (в сети Тор) - это позволяет безопасно и анонимно покупать и продавать товары, запрещённые во многих странах.
+                </p>
 
-                <p>dd Marketplace имеет только один основной адрес в сети Тор:</p>
+                <div>
 
-                <div
-                    class="field has-addons"
-                    x-data="{ input: '{{ $page->onionUrl }}' }"
-                >
-                    <div class="control is-expanded">
-                        <input
-                            type="text"
-                            class="input select-all"
-                            readonly
-                            aria-label="Основной адрес dd Marketplace в сети Тор"
-                            x-model="input"
-                        >
-                    </div>
-                    <div class="control">
-                        <button
-                            class="button is-primary"
-                            @click="$clipboard(input)"
-                        >Скопировать</button>
-                    </div>
+                    <p>dd Marketplace имеет только один основной адрес в сети Тор:</p>
+
+                    @include('_partials.onion-address')
+
+                </div>
+
+                <p class="max-w-prose">
+                    Чтобы зайти на сайт по этому адресу, нужно использовать
+                    <a class="link" href="{{ url('tor-browser') }}"><strong>Tor Browser.</strong></a><br>
+                </p>
+
+                <div>
+                    <p class="max-w-prose">
+                        Или ты всегда можешь воспользоваться официальным Tor2Web сервисом по адресу
+                        <a href="{{ $page->clearnetUrl }}" class="link">{{ $page->clearnetAddress }}:</a>
+                    </p>
+                    <a href="{{ $page->clearnetUrl }}" class="button is-primary mt-2">Перейти на {{ $page->clearnetAddress }}</a>
                 </div>
 
             </div>
-
-            <p class="mt-4 max-w-prose">
-                Чтобы зайти на сайт по этому адресу, нужно использовать
-                <a class="link" href="{{ url('tor-browser') }}"><strong>Tor Browser.</strong></a><br>
-            </p>
-
-            <p class="mt-4 max-2-prose">
-                Или ты всегда можешь воспользоваться официальным Tor2Web сервисом по адресу
-                <a href="{{ $page->clearnetUrl }}" class="link">{{ $page->clearnetAddress }}:</a>
-            </p>
-
-            <a href="{{ $page->clearnetUrl }}" class="button is-primary mt-2">Перейти на {{ $page->clearnetAddress }}</a>
 
         </x-box>
     </x-section>
@@ -79,14 +65,18 @@
 
             <h1 class="title is-1">Безопасность</h1>
 
-            <div class="prose">
-                <p>
+            <div class="space-y-5">
+                <p class="max-w-prose">
                     Пользователи даркмаркетов - постоянная цель фишинговых атак.<br>
                     Чтобы не потерять свои деньги - обязательно проверяй адрес сайта!
                 </p>
-                <blockquote><p>Проверяй адрес сайта, чтобы не потерять свои деньги!</p></blockquote>
-                <p>Официальный список зеркал всегда опубликован на самом dd Marketplace и подписан PGP ключом площадки, приводим его здесь:</p>
-                <pre><code>{!! file_get_contents('mirrors.txt') !!}</code></pre>
+                <x-blockquote>
+                    <p class="max-w-prose">Проверяй адрес сайта, чтобы не потерять свои деньги!</p>
+                </x-blockquote>
+                <p class="max-w-prose">Официальный список зеркал всегда опубликован на самом dd Marketplace и подписан PGP ключом площадки, приводим его здесь:</p>
+                <div class="max-w-prose">
+                <x-code>{!! file_get_contents('mirrors.txt') !!}</x-code>
+                </div>
                 <p>Подробности ищи в разделе "Помощь" на dd.</p>
             </div>
 
