@@ -5,11 +5,18 @@ return [
     'baseUrl' => '',
     'title' => 'Jigsaw',
     'description' => 'Website description.',
-    'collections' => [],
-    'assetsUrl' => 'assets',
-    'imagesUrl' => 'assets/images',
-    'onionAddress' => 'ddgoodscoede23n56nlrblsudrlnhgyjwtq5cbpqn4zv24ff7hwvakqd.onion',
-    'onionUrl' => 'http://ddgoodscoede23n56nlrblsudrlnhgyjwtq5cbpqn4zv24ff7hwvakqd.onion/',
-    'clearnetAddress' => 'ddru.cc',
-    'clearnetUrl' => 'https://ddru.cc/',
+    'assets_url' => 'assets',
+    'images_url' => 'assets/images',
+    'onion_address' => 'ddgoodscoede23n56nlrblsudrlnhgyjwtq5cbpqn4zv24ff7hwvakqd.onion',
+    'onion_url' => 'http://ddgoodscoede23n56nlrblsudrlnhgyjwtq5cbpqn4zv24ff7hwvakqd.onion/',
+    'clearnet_address' => 'ddru.cc',
+    'clearnet_url' => 'https://ddru.cc/',
+
+    'collections' => [
+        'news' => [
+            'path' => 'news',
+            'sort' => 'date',
+        ],
+    ],
+
 ];
