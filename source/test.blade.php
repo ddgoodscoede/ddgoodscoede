@@ -17,6 +17,12 @@
         <div class="w-full">
             <a href="" class="button is-primary">A button</a>
         </div>
+
+        <div class="max-w-prose">
+            <div class="line-clamp-3">
+                Sed neque cursus mus tellus ut imperdiet condimentum dignissim, class platea vivamus nunc suspendisse justo elementum, nisi primis quisque vestibulum ultrices pellentesque curae. Imperdiet vitae suspendisse viverra phasellus dui litora purus donec vulputate, aliquam at sed sociosqu elit cubilia lectus parturient, dictumst tempor commodo ac libero hendrerit placerat cursus. Dis dui felis habitasse ad aenean tempor justo luctus natoque mi, commodo bibendum habitant semper metus iaculis nec posuere taciti curae, aliquam mollis ac neque sit accumsan eleifend suscipit fames. Enim tellus blandit sem mollis augue turpis dictumst magnis lacinia quis adipiscing, faucibus iaculis integer nullam metus habitasse montes cum venenatis sagittis, sollicitudin vehicula congue posuere interdum pretium placerat eget mi pharetra.
+            </div>
+        </div>
         
     </body>
 </html>

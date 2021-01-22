@@ -1,6 +1,6 @@
 <div
     class="field has-addons"
-    x-data="{ input: '{{ $page->onionUrl }}' }"
+    x-data="{ input: '{{ $page->onion_url }}' }"
 >
     <div class="control is-expanded">
         <input

@@ -3,9 +3,9 @@
     <x-section>
         <x-box class="text-center">
 
-            <h2 class="title is-2">Безопасность. Анонимность. <br> Начни покупки на dd</h2>
+            <h2 class="title is-2 mb-3.5">Безопасность. Анонимность. <br> Начни покупки на dd</h2>
             <a
-                href="{{ $page->clearnetUrl }}"
+                href="{{ $page->clearnet_url }}"
                 class="button is-primary is-rounded h-48 shadow-md"
             >
                 <strong>
@@ -21,11 +21,11 @@
     <x-section>
         <x-box>
 
-            <h1 class="title is-1">Зайти на dd Marketplace</h1>
+            <h1 class="title is-1 mb-3.5">Зайти на dd Marketplace</h1>
 
             <div class="space-y-5">
 
-                <a href="{{ $page->clearnetUrl }}">
+                <a href="{{ $page->clearnet_url }}">
                     <img src="{{ $page->image('screenshot.png') }}" alt="Скриншот главной страницы dd Marketplace">
                 </a>
 
@@ -50,9 +50,12 @@
                 <div>
                     <p class="max-w-prose">
                         Или ты всегда можешь воспользоваться официальным Tor2Web сервисом по адресу
-                        <a href="{{ $page->clearnetUrl }}" class="link">{{ $page->clearnetAddress }}:</a>
+                        <a href="{{ $page->clearnet_url }}" class="link">{{ $page->clearnet_address }},</a>
+                        работающим <strong>на любом устройстве и через любой браузер</strong>:
                     </p>
-                    <a href="{{ $page->clearnetUrl }}" class="button is-primary mt-2">Перейти на {{ $page->clearnetAddress }}</a>
+                    <div class="mt-2">
+                        @include('_partials.dd2web-button')
+                    </div>
                 </div>
 
             </div>
@@ -63,7 +66,7 @@
     <x-section>
         <x-box>
 
-            <h1 class="title is-1">Безопасность</h1>
+            <h1 class="title is-1 mb-3.5">Безопасность</h1>
 
             <div class="space-y-5">
                 <p class="max-w-prose">

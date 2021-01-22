@@ -1,6 +1,6 @@
 <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8">
     <x-card.download>
-        <x-icon class="w-12 h-12">
+        <x-icon class="w-12 h-12 text-gray-900">
             <i class="fab fa-windows fa-3x"></i>
         </x-icon>
         <a
@@ -9,7 +9,7 @@
         >Windows</a>
     </x-card.download>
     <x-card.download>
-        <x-icon class="w-12 h-12">
+        <x-icon class="w-12 h-12 text-gray-900">
             <i class="fab fa-apple fa-3x"></i>
         </x-icon>
         <a
@@ -18,7 +18,7 @@
         >macOS</a>
     </x-card.download>
     <x-card.download>
-        <x-icon class="w-12 h-12">
+        <x-icon class="w-12 h-12 text-gray-900">
             <i class="fab fa-linux fa-3x"></i>
         </x-icon>
         <a
@@ -27,7 +27,7 @@
         >Linux</a>
     </x-card.download>
     <x-card.download>
-        <x-icon class="w-12 h-12">
+        <x-icon class="w-12 h-12 text-gray-900">
             <i class="fab fa-google-play fa-3x"></i>
         </x-icon>
         <a
@@ -36,7 +36,7 @@
         >Android</a>
     </x-card.download>
     <x-card.download>
-        <x-icon class="w-12 h-12">
+        <x-icon class="w-12 h-12 text-gray-900">
             <i class="fab fa-app-store-ios fa-3x"></i>
         </x-icon>
         <a

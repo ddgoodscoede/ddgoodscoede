@@ -2,7 +2,7 @@
     <x-section>
         <x-box>
 
-            <h1 class="title is-1">Tor Browser</h1>
+            <h1 class="title is-1 mb-3.5">Tor Browser</h1>
 
             <div class="flex items-center space-x-4">
                 <div class="w-24 h-24 flex items-center">
@@ -31,7 +31,7 @@
                     только используя <strong>Tor Browser</strong>.
                 </p>
                 <p class="max-w-prose">
-                    При этом и ты и диди полностью анонимны.
+                    При этом и ты и Диди полностью анонимны.
                 </p>
 
                 <x-blockquote>
@@ -79,7 +79,7 @@
 
                 <p class="max-w-prose">
                     Или ты всегда можешь воспользоваться официальным Tor2Web сервисом по адресу
-                    <a href="{{ $page->clearnetUrl }}" class="link">{{ $page->clearnetAddress }}:</a>
+                    <a href="{{ $page->clearnet_url }}" class="link">{{ $page->clearnet_address }}:</a>
                 </p>
 
             </div>

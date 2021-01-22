@@ -73,6 +73,8 @@ module.exports = {
             borderWidth: ['active'],
             borderColor: ['active', 'focus'],
             margin: ['first', 'last'],
+            padding: ['first', 'last'],
+            textColor: ['active'],
             zIndex: ['hover', 'active'],
         },
     },
