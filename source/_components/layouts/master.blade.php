@@ -40,8 +40,6 @@
 
                 </div>
 
-                <x-footer :page="$page" />
-
             </div>
 
         </div>
