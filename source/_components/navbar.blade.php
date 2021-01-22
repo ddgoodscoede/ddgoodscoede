@@ -24,22 +24,19 @@
         {{-- Start --}}
         <div class="flex flex-nowrap items-stretch mr-auto">
             <x-navbar.link href="{{ url('/') }}">
-                <span>Как зайти на <b>dd</b></span>
+                <span>Как зайти на dd</span>
             </x-navbar.link>
             <x-navbar.link href="{{ url('tor-browser') }}">
                 <span>Тор Браузер</span>
             </x-navbar.link>
             <x-navbar.link href="{{ url('mirrors') }}">
-                <span>Зеркала <b>dd</b></span>
+                <span>Зеркала dd</span>
             </x-navbar.link>
-            <x-navbar.link href="{{ url('balance') }}">
+            <x-navbar.link href="{{ url('payments') }}">
                 <span>Пополнение баланса</span>
             </x-navbar.link>
             <x-navbar.link href="{{ url('purchases') }}">
-                <span>Покупки на <b>dd</b></span>
-            </x-navbar.link>
-            <x-navbar.link href="{{ url('blog') }}">
-                <span>Блог</span>
+                <span>Покупки на dd</span>
             </x-navbar.link>
             <x-navbar.link href="{{ url('news') }}">
                 <span>Новости</span>
@@ -51,7 +48,7 @@
         <div class="flex flex-nowrap items-stretch">
             {{-- Buttons --}}
             <div class="py-2 px-3 flex items-center">
-                <a href="{{ $page->clearnetUrl }}" class="button is-primary is-rounded"><strong>Зайти на dd</strong></a>
+                <a href="{{ $page->clearnet_url }}" class="button is-primary is-rounded"><strong>Зайти на dd</strong></a>
             </div>
         </div>
 
