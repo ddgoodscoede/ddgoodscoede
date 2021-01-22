@@ -6,6 +6,7 @@
             inline-flex
             relative
             cursor-pointer
+            transition
             /* Content */
             py-2 px-4
             whitespace-nowrap
@@ -13,6 +14,7 @@
             items-center
             justify-center
             select-none
+            text-gray-800
 
             /*
              Default style
@@ -55,6 +57,10 @@
             /* Content */
             text-white
         ;
+
+        strong {
+            @apply text-white;
+        }
     }
 
     .button.is-light {
