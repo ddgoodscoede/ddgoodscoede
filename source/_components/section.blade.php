@@ -1,1 +1,1 @@
-<div class="py-12">{{ $slot }}</div>
+<div class="pt-12 last:pb-12">{{ $slot }}</div>
