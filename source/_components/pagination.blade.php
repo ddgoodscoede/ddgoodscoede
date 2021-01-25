@@ -21,8 +21,7 @@
         @foreach($pagination->pages as $pageNumber => $path)
             <li class="inline-block">
                 <a
-                    class="button is-rounded"
-                    style="min-width: 2.5em; padding: 7px .5em 7px .5em;"
+                    class="button is-rounded px-2 min-w-10"
                     href="{{ $path }}"
                 >{{ $pageNumber }}</a>
             </li>
