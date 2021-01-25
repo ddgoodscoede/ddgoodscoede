@@ -2,6 +2,13 @@
 
 @props(['pagination'])
 
+{{--
+
+    IMPORTANT! This type of pagination isn't finished. It won't work with too many pages.
+    Do not copy blindly, see how Laravel does it.
+
+--}}
+
 <nav
     {{ $attributes->merge([
         'class' => 'flex items-center',
