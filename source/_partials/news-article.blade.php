@@ -4,7 +4,7 @@
         <p class="sr-only">Дата публикации</p>
         <p><time datetime="{{ $article->date }}">{{ carbon($article->date)->diffForHumans() }}</time></p>
 
-        <h2 class="title is-2 hover:underline active:text-gray-700 mb-3.5">
+        <h2 class="title is-2 hover:underline active:text-gray-700 mb-4">
             <a
                 href="{{ $article->getUrl() }}"
                 title="Подробнее - {{ $article->title }}"
