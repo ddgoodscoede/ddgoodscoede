@@ -77,6 +77,48 @@
     }
 
     /*
+     Info-colored button (lighter blue)
+     */
+    .button.is-info {
+        @apply
+            /* Default state */
+            border-transparent
+            bg-lightBlue-500
+            /* Hover */
+            hover:bg-lightBlue-600
+            /* Active */
+            active:bg-lightBlue-700
+            /* Focus */
+            focus:ring-2
+            focus:ring-lightBlue-500
+            focus:ring-opacity-25
+            /* Content */
+            text-white
+        ;
+    }
+
+    /*
+     Link-colored button (darker blue)
+     */
+    .button.is-link {
+        @apply
+            /* Default state */
+            border-transparent
+            bg-blue-600
+            /* Hover */
+            hover:bg-blue-700
+            /* Active */
+            active:bg-blue-800
+            /* Focus */
+            focus:ring-2
+            focus:ring-blue-600
+            focus:ring-opacity-25
+            /* Content */
+            text-white
+        ;
+    }
+
+    /*
      Button with a light background
      */
     .button.is-light {
