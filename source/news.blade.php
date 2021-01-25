@@ -1,3 +1,9 @@
+---
+pagination:
+    collection: news
+    perPage: 3
+---
+
 <x-layouts.master :page="$page">
 
     <x-section>
@@ -6,13 +12,16 @@
 
         <ul class="space-y-5">
 
-            @foreach($news as $article)
+            @foreach($pagination->items as $article)
                 <li>
                     @include('_partials.news-article')
                 </li>
             @endforeach
 
         </ul>
+
+        <x-pagination :pagination="$pagination" class="mt-8" />
+
     </x-section>
 
 </x-layouts.master>
