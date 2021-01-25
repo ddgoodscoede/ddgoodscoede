@@ -68,6 +68,7 @@ module.exports = {
             red: colors.red,
             yellow: colors.yellow,
             blue: colors.blue,
+            lightBlue: colors.lightBlue,
         },
         extend: {
             /*
