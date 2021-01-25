@@ -16,10 +16,10 @@
         </p>
 
         <a
-            class="inline-block link mt-4"
+            class="button is-small mt-4"
             href="{{ $article->getUrl() }}"
             title="Подробнее - {{ $article->title }}"
-        >Подробнее</a>
+        >Читать дальше →</a>
 
     </x-box>
 </article>
