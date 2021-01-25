@@ -1,5 +1,8 @@
 @layer components {
 
+    /*
+     Default button
+     */
     .button {
         @apply
             /* Base */
@@ -37,10 +40,16 @@
         ;
     }
 
+    /*
+     Button with more rounded corners
+     */
     .button.is-rounded {
         @apply rounded-3xl;
     }
 
+    /*
+     Primary button (green)
+     */
     .button.is-primary {
         @apply
             /* Default state */
@@ -63,6 +72,9 @@
         }
     }
 
+    /*
+     Button with a light background
+     */
     .button.is-light {
         @apply
             /* Default state */
@@ -79,4 +91,13 @@
         ;
     }
 
+    /*
+     Various button sizes
+     */
+    .button.is-tiny {
+        @apply rounded-sm text-xs;
+    }
+    .button.is-small {
+        @apply text-sm;
+    }
 }
