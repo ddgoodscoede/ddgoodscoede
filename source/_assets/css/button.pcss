@@ -100,4 +100,16 @@
     .button.is-small {
         @apply text-sm;
     }
+
+    /*
+     Disabled button
+     */
+    .button[disabled] {
+        @apply
+            cursor-not-allowed
+            pointer-events-none
+            opacity-50
+        ;
+    }
+
 }
