@@ -25,9 +25,12 @@
 
             <div class="space-y-5">
 
-                <a href="{{ $page->clearnet_url }}">
-                    <img src="{{ $page->image('screenshot.png') }}" alt="Скриншот главной страницы dd Marketplace">
-                </a>
+                <figure>
+                    <a href="{{ $page->clearnet_url }}">
+                        <img src="{{ $page->image('screenshot.png') }}" alt="Скриншот главной страницы dd Marketplace">
+                    </a>
+                    <figcaption class="figcaption">Главная страница dd Marketplace</figcaption>
+                </figure>
 
                 <p class="max-w-prose">
                     <strong>dd Marketplace</strong> - современная анонимная площадка моментальных покупок.<br>
