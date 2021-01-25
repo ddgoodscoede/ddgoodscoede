@@ -21,7 +21,7 @@
         @foreach($pagination->pages as $pageNumber => $path)
             <li class="inline-block">
                 <a
-                    class="button is-rounded px-2 min-w-10 {{ $pagination->currentPage == $pageNumber ? 'is-link' : null }}"
+                    class="button is-rounded px-2 min-w-10 {{ $pagination->currentPage == $pageNumber ? 'is-link cursor-default pointer-events-none' : null }}"
                     href="{{ $path }}"
                 >{{ $pageNumber }}</a>
             </li>
