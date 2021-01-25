@@ -1,6 +1,5 @@
 <?php
 
-use Carbon\Carbon;
 use Carbon\CarbonImmutable;
 use Carbon\CarbonInterface;
 

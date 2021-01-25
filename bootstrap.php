@@ -1,5 +1,7 @@
 <?php
 
+use Carbon\Carbon;
+use Carbon\CarbonImmutable;
 use TightenCo\Jigsaw\Jigsaw;
 
 /** @var $container \Illuminate\Container\Container */
@@ -15,3 +17,10 @@ use TightenCo\Jigsaw\Jigsaw;
  *     // Your code here
  * });
  */
+
+$events->beforeBuild(function (Jigsaw $jigsaw) {
+    $defaultLocale = $jigsaw->getConfig('default_locale');
+    Carbon::setLocale($defaultLocale);
+    CarbonImmutable::setLocale($defaultLocale);
+    setlocale(LC_ALL, $jigsaw->getConfig('locales.' . $defaultLocale));
+});
