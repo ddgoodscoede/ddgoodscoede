@@ -5,6 +5,8 @@
 <nav
     {{ $attributes->merge([
         'class' => 'flex items-center',
+        'role' => 'navigation',
+        'aria-label' => 'pagination',
     ]) }}
 >
 
