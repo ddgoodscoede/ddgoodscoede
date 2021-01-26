@@ -6,16 +6,14 @@
             <a class="py-2 px-3" href="{{ url('/') }}">
                 <img
                     class="hidden lg:block"
-                    src="{{ $page->image('logo-2x.png') }}"
-                    width="160"
-                    height="40"
+                    src="{{ $page->image('dd-info-2x.png') }}"
+                    width="140"
                     alt="Логотип dd Marketplace"
                 >
                 <img
                     class="lg:hidden"
                     src="{{ $page->image('logo-small-2x.png') }}"
-                    width="40"
-                    height="40"
+                    width="80"
                     alt="Логотип dd Marketplace"
                 >
             </a>
