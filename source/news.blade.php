@@ -3,7 +3,7 @@ title: Новости индустрии
 description: Авторские новости и переводы тематических новостей со всего мира от команды dd Marketplace.
 pagination:
     collection: news
-    perPage: 3
+    perPage: 5
 ---
 
 <x-layouts.master :page="$page">
