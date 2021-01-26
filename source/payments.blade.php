@@ -3,7 +3,7 @@
     <x-section>
         <x-box>
 
-            <h1 class="title is-1 mb-3.5">Пополнение баланса</h1>
+            <h1 class="title is-1 mb-4">Пополнение баланса</h1>
 
             <div class="space-y-5">
 
@@ -63,7 +63,7 @@
     <x-section>
         <x-box>
 
-            <h1 class="title is-1 mb-3.5">Вывод средств</h1>
+            <h1 class="title is-1 mb-4">Вывод средств</h1>
 
             <div class="space-y-5">
 

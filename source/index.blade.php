@@ -21,7 +21,7 @@
     <x-section>
         <x-box>
 
-            <h1 class="title is-1 mb-3.5">Зайти на dd Marketplace</h1>
+            <h1 class="title is-1 mb-4">Зайти на dd Marketplace</h1>
 
             <div class="space-y-5">
 
@@ -65,7 +65,7 @@
     <x-section>
         <x-box>
 
-            <h1 class="title is-1 mb-3.5">Безопасность</h1>
+            <h1 class="title is-1 mb-4">Безопасность</h1>
 
             <div class="space-y-5">
                 <p class="max-w-prose">

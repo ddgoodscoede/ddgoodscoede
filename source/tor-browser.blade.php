@@ -2,7 +2,7 @@
     <x-section>
         <x-box>
 
-            <h1 class="title is-1 mb-3.5">Tor Browser</h1>
+            <h1 class="title is-1 mb-4">Tor Browser</h1>
 
             <div class="flex items-center space-x-4">
                 <div class="w-24 h-24 flex items-center">

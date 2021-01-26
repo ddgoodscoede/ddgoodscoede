@@ -3,7 +3,7 @@
     <x-section>
         <x-box>
 
-            <h1 class="title is-1 mb-3.5">Зеркала</h1>
+            <h1 class="title is-1 mb-4">Зеркала</h1>
 
             <div class="space-y-5">
 
@@ -49,7 +49,7 @@
     <x-section>
         <x-box>
 
-            <h1 class="title is-1 mb-3.5">Официальный список зеркал dd Marketplace</h1>
+            <h1 class="title is-1 mb-4">Официальный список зеркал dd Marketplace</h1>
 
             <div class="max-w-prose">
                 <x-code>{!! file_get_contents('mirrors.txt') !!}</x-code>
@@ -61,7 +61,7 @@
     <x-section>
         <x-box>
 
-            <h1 class="title is-1 mb-3.5">Публичный PGP-ключ dd Marketplace</h1>
+            <h1 class="title is-1 mb-4">Публичный PGP-ключ dd Marketplace</h1>
 
             <div class="max-w-prose">
                 <x-code>{!! file_get_contents('pgp.txt') !!}</x-code>
