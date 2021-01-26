@@ -88,8 +88,11 @@ module.exports = {
                             '&:hover': {
                                 textDecoration: 'underline',
                             },
+                            '&:active': {
+                                color: theme('colors.blue.800'),
+                            },
                         },
-                        // Customization example kept for reference
+                        // Nested elements customization example kept for reference
                         /*
                         'a strong': {
                             color: theme('colors.blue.700'),
