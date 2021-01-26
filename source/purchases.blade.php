@@ -13,10 +13,11 @@
                 </p>
 
                 <div class="grid grid-cols-12 justify-center">
-                    <figure class="col-span-6 bg-gray-50 border rounded-md p-4">
-                        <img src="{{ $page->image('dd-change-region.png') }}" alt="Кнопка смены региона на Диди">
-                        <figcaption class="figcaption mt-4">Кнопка смены региона на Диди</figcaption>
-                    </figure>
+                    <x-screenshot
+                        class="col-span-6"
+                        src="{{ $page->image('dd-change-region.png') }}"
+                        alt="Кнопка смены региона на Диди"
+                    >Кнопка смены региона на Диди</x-screenshot>
                 </div>
 
                 <p class="max-w-prose">
@@ -26,10 +27,11 @@
                 </p>
 
                 <div class="grid grid-cols-12 justify-center">
-                    <figure class="col-span-6 bg-gray-50 border rounded-md p-4">
-                        <img src="{{ $page->image('dd-purchase.png') }}" alt="Блок покупки товара на Диди">
-                        <figcaption class="figcaption mt-4">Покупки на dd Marketplace</figcaption>
-                    </figure>
+                    <x-screenshot
+                        class="col-span-6"
+                        src="{{ $page->image('dd-purchase.png') }}"
+                        alt="Блок покупки товара на Диди"
+                    >Покупки на dd Marketplace</x-screenshot>
                 </div>
 
                 <p class="max-w-prose">
@@ -40,10 +42,11 @@
                 </p>
 
                 <div class="grid grid-cols-12 justify-center">
-                    <figure class="col-span-6">
-                        <img src="{{ $page->image('dd-drop-search.png') }}" alt="Страница поиска закладки">
-                        <figcaption class="figcaption">Страница поиска закладки</figcaption>
-                    </figure>
+                    <x-screenshot
+                        class="col-span-6"
+                        src="{{ $page->image('dd-drop-search.png') }}"
+                        alt="Страница поиска закладки"
+                    >Страница поиска закладки</x-screenshot>
                 </div>
 
                 <p class="max-w-prose">
