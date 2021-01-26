@@ -105,14 +105,17 @@ module.exports = {
                     },
                 },
             }),
-            /*
-             Custom values for aspect-ratio plugin
-             */
+            // Custom values for aspect-ratio plugin
             aspectRatio: {
                 521: '521',
                 360: '360',
             },
+            // Extending min-width utilities using a custom sizing scale (see above).
             minWidth: smallSizingScale,
+            // Some additional border options
+            borderWidth: {
+                '3': '3px',
+            },
         },
     },
     variants: {
@@ -120,6 +123,7 @@ module.exports = {
             backgroundColor: ['active'],
             borderWidth: ['active'],
             borderColor: ['active', 'focus'],
+            display: ['group-hover'],
             margin: ['first', 'last'],
             padding: ['first', 'last'],
             textColor: ['active'],
