@@ -1,0 +1,27 @@
+@layer components {
+
+    /*
+     Chevron-down icon shown on dropdowns
+     */
+    .chevron-down {
+        @apply border-blue-600;
+
+        border-width: 0 0 3px 3px;
+        border-style: solid;
+        border-radius: 2px;
+
+        width: .625em;
+        height: .625em;
+
+        transform: rotate(-45deg);
+        transform-origin: center;
+
+        display: inline-block;
+        position: relative;
+        top: -2px;
+
+        content: " ";
+        pointer-events: none;
+    }
+
+}
