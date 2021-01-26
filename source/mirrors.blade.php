@@ -7,39 +7,39 @@
 
             <div class="space-y-5">
 
-                <p class="max-w-prose">
+                <x-p>
                     Официальный список зеркал Диди всегда опубликован на самом {{ $page->appName() }}
                     и подписан PGP ключом сайта. (смотри раздел "Помощь")
-                </p>
+                </x-p>
 
-                <p class="max-w-prose">
+                <x-p>
                     <strong>{{ $page->appName() }}</strong> имеет только один адрес в сети Тор и не использует .onion зеркал.
-                </p>
+                </x-p>
 
                 @include('_partials.onion-address')
 
-                <p class="max-w-prose">
+                <x-p>
                     Лучший способ получить публичный PGP ключ Диди -
                     это скачать его прямо с сайта {{ $page->appName() }} (из раздела "Помощь") через
                     <a href="{{ url('tor-browser') }}" class="link">Tor Browser.</a>
                     Для работы с PGP потребуется компьютер.
-                </p>
+                </x-p>
 
                 <div class="max-w-prose">
-                    <p>
+                    <x-p>
                         На данный момент у Диди также есть официальный Tor2Web шлюз по адресу
                         <a href="{{ $page->clearnet_url }}" class="link">{{ $page->clearnet_address }},</a>
                         работающий <strong>с любого устройства и через любой браузер:</strong>
-                    </p>
+                    </x-p>
                     <div class="mt-2">
                         @include('_partials.dd2web-button')
                     </div>
                 </div>
 
                 <x-blockquote>
-                    <p class="max-w-prose">
+                    <x-p>
                         Проверь адрес сайта перед скачиванием PGP ключа, чтобы не получить фальшивый ключ!
-                    </p>
+                    </x-p>
                 </x-blockquote>
 
             </div>

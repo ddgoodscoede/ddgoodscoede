@@ -23,22 +23,22 @@
 
             <div class="mt-2 space-y-5">
 
-                <p class="max-w-prose">
+                <x-p>
                     <strong>{{ $page->appName() }}</strong> работает в даркнете,
                     т.е. запущен как скрытый сервис Тор (Tor Hidden Service),
                     также известный как Луковый сервис (Onion Service).
                     Это означает, что попасть на исходный сайт можно
                     только используя <strong>Tor Browser</strong>.
-                </p>
-                <p class="max-w-prose">
+                </x-p>
+                <x-p>
                     При этом и ты и Диди полностью анонимны.
-                </p>
+                </x-p>
 
                 <x-blockquote>
-                    <p class="max-w-prose">Используй Tor Browser для полной анонимности!</p>
+                    <x-p>Используй Tor Browser для полной анонимности!</x-p>
                 </x-blockquote>
 
-                <p class="max-w-prose">Скачать Tor Browser можно с официального сайта Tor Project:</p>
+                <x-p>Скачать Tor Browser можно с официального сайта Tor Project:</x-p>
 
                 <div>
                     <div>
@@ -61,28 +61,28 @@
                     </div>
                 </div>
 
-                <p>Или по этим прямым ссылкам:</p>
+                <x-p>Или по этим прямым ссылкам:</x-p>
 
                 @include('_partials.download-tor-browser')
 
-                <p class="max-w-prose">
+                <x-p>
                     Интернет наполнен фальшивыми фишинговыми сайтами, выдающими себя за dd.
                     Чтобы не попасться на удочку - всегда проверяй адрес сайта!
-                </p>
+                </x-p>
 
                 <x-blockquote>
-                    <p class="max-w-prose">Всегда проверяй адрес сайта!</p>
+                    <x-p>Всегда проверяй адрес сайта!</x-p>
                 </x-blockquote>
 
-                <p class="max-w-prose">У <strong>{{ $page->appName() }}</strong> только один настоящий адрес в сети Тор:</p>
+                <x-p>У <strong>{{ $page->appName() }}</strong> только один настоящий адрес в сети Тор:</x-p>
 
                 @include('_partials.onion-address')
 
                 <div>
-                    <p class="max-w-prose">
+                    <x-p>
                         Или ты всегда можешь воспользоваться официальным Tor2Web сервисом по адресу
                         <a href="{{ $page->clearnet_url }}" class="link">{{ $page->clearnet_address }}:</a>
-                    </p>
+                    </x-p>
                     <div class="mt-2">
                         @include('_partials.dd2web-button')
                     </div>

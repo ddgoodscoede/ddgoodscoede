@@ -31,29 +31,29 @@
                     alt="Скриншот главной страницы {{ $page->appName() }}"
                 >Главная страница {{ $page->appName() }}</x-screenshot>
 
-                <p class="max-w-prose">
+                <x-p>
                     <strong>{{ $page->appName() }}</strong> — современная анонимная площадка моментальных покупок.<br>
                     Площадка размещена в даркнете (в сети Тор) —
                     это позволяет безопасно и анонимно покупать и
                     продавать товары, запрещённые во многих странах.
-                </p>
+                </x-p>
 
                 <div>
                     <p>Диди имеет только один основной адрес в сети Тор:</p>
                     @include('_partials.onion-address')
                 </div>
 
-                <p class="max-w-prose">
+                <x-p>
                     Чтобы зайти на сайт по этому адресу, нужно использовать
                     <a class="link" href="{{ url('tor-browser') }}"><strong>Tor Browser.</strong></a><br>
-                </p>
+                </x-p>
 
                 <div>
-                    <p class="max-w-prose">
+                    <x-p>
                         Или ты всегда можешь воспользоваться официальным Tor2Web сервисом по адресу
                         <a href="{{ $page->clearnet_url }}" class="link">{{ $page->clearnet_address }},</a>
                         работающим <strong>на любом устройстве и через любой браузер</strong>:
-                    </p>
+                    </x-p>
                     <div class="mt-2">
                         @include('_partials.dd2web-button')
                     </div>
@@ -70,21 +70,21 @@
             <h1 class="title is-1 mb-4">Безопасность</h1>
 
             <div class="space-y-5">
-                <p class="max-w-prose">
+                <x-p>
                     Пользователи даркмаркетов — постоянная цель фишинговых атак.<br>
                     Чтобы не потерять свои деньги — обязательно проверяй адрес сайта!
-                </p>
+                </x-p>
                 <x-blockquote>
-                    <p class="max-w-prose">Проверяй адрес сайта, чтобы не потерять свои деньги!</p>
+                    <x-p>Проверяй адрес сайта, чтобы не потерять свои деньги!</x-p>
                 </x-blockquote>
-                <p class="max-w-prose">
+                <x-p>
                     Официальный список зеркал всегда опубликован на самом {{ $page->appName() }}
                     и подписан PGP ключом площадки, приводим его здесь:
-                </p>
+                </x-p>
                 <div class="max-w-prose">
                 <x-code>{!! file_get_contents('mirrors.txt') !!}</x-code>
                 </div>
-                <p>Подробности ищи в разделе "Помощь" на dd.</p>
+                <x-p>Подробности ищи в разделе "Помощь" на dd.</x-p>
             </div>
 
         </x-box>
