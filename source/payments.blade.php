@@ -7,11 +7,12 @@
 
             <div class="space-y-5">
 
-                <div class="max-w-prose">
-                    <a href="{{ $page->clearnet_url }}">
-                        <img src="{{ $page->image('dd-balance.png') }}" alt="Скриншот кнопки поплнения баланса на dd Marketplace">
-                    </a>
-                </div>
+                <x-screenshot
+                    class="max-w-prose"
+                    href="{{ $page->clearnet_url }}"
+                    src="{{ $page->image('dd-balance.png') }}"
+                    alt="Скриншот кнопки пополнения баланса на dd Marketplace"
+                >Кнопка пополнения баланса на dd Marketplace</x-screenshot>
 
                 <p class="max-w-prose">
                     Все сделки на Диди проводятся в биткоинах, пополнить свой баланс можно тоже только с помощью биткоинов. Это обеспечивает высокий уровень анонимности и безопасности, при соблюдении ряда простых правил.

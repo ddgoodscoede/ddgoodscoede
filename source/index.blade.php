@@ -25,12 +25,11 @@
 
             <div class="space-y-5">
 
-                <figure>
-                    <a href="{{ $page->clearnet_url }}">
-                        <img src="{{ $page->image('screenshot.png') }}" alt="Скриншот главной страницы dd Marketplace">
-                    </a>
-                    <figcaption class="figcaption">Главная страница dd Marketplace</figcaption>
-                </figure>
+                <x-screenshot
+                    href="{{ $page->clearnet_url }}"
+                    src="{{ $page->image('screenshot.png') }}"
+                    alt="Скриншот главной страницы dd Marketplace"
+                >Главная страница dd Marketplace</x-screenshot>
 
                 <p class="max-w-prose">
                     <strong>dd Marketplace</strong> - современная анонимная площадка моментальных покупок.<br>
@@ -38,11 +37,8 @@
                 </p>
 
                 <div>
-
                     <p>dd Marketplace имеет только один основной адрес в сети Тор:</p>
-
                     @include('_partials.onion-address')
-
                 </div>
 
                 <p class="max-w-prose">
