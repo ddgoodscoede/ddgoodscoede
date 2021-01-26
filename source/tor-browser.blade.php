@@ -1,3 +1,8 @@
+---
+title: Скачать Tor Browser для входа на dd Marketplace.
+description: Браузер для Диди, скачать по прямой ссылке или с официального сайта.
+---
+
 <x-layouts.master :page="$page">
     <x-section>
         <x-box>

@@ -1,4 +1,6 @@
 ---
+title: Новости индустрии
+description: Авторские новости и переводы тематических новостей со всего мира от команды dd Marketplace.
 pagination:
     collection: news
     perPage: 3

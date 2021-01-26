@@ -1,3 +1,8 @@
+---
+title: Зеркала dd Marketplace
+description: Список актуальных зеркал dd Marketplace в Торе и в Интернете. Как получить список зеркал dd Marketplace. PGP-ключ dd Marketplace.
+---
+
 <x-layouts.master :page="$page">
 
     <x-section>

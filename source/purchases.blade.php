@@ -1,3 +1,8 @@
+---
+title: Как покупать на dd Marketplace
+description: Покупки на dd Marketplace. Как купить на Диди.
+---
+
 <x-layouts.master :page="$page">
 
     <x-section>
