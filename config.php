@@ -1,14 +1,23 @@
 <?php
 
 return [
+
+    // General
     'production' => false,
     'baseUrl' => '',
+
+    // Default meta
     'title' => 'Jigsaw',
     'description' => 'Website description.',
 
+    // URL prefixes to generate assets URLs
     'assets_url' => 'assets',
     'images_url' => 'assets/images',
 
+    // Reusable name of the target application
+    'dd_name' => 'dd Marketplace',
+
+    // Target addresses
     'onion_address' => 'ddgoodscoede23n56nlrblsudrlnhgyjwtq5cbpqn4zv24ff7hwvakqd.onion',
     'onion_url' => 'http://ddgoodscoede23n56nlrblsudrlnhgyjwtq5cbpqn4zv24ff7hwvakqd.onion/',
     'clearnet_address' => 'ddru.cc',
@@ -22,6 +31,7 @@ return [
         'en' => ['en_US.UTF-8', 'en_US'],
     ],
 
+    // Jigsaw collections
     'collections' => [
         'news' => [
             'path' => 'news',

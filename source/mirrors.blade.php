@@ -8,18 +8,19 @@
             <div class="space-y-5">
 
                 <p class="max-w-prose">
-                    Официальный список зеркал Диди всегда опубликован на самом dd Marketplace и подписан PGP ключом сайта.
+                    Официальный список зеркал Диди всегда опубликован на самом {{ $page->appName() }}
+                    и подписан PGP ключом сайта. (смотри раздел "Помощь")
                 </p>
 
                 <p class="max-w-prose">
-                    <strong>dd Marketplace</strong> имеет только один адрес в сети Тор и не использует .onion зеркал.
+                    <strong>{{ $page->appName() }}</strong> имеет только один адрес в сети Тор и не использует .onion зеркал.
                 </p>
 
                 @include('_partials.onion-address')
 
                 <p class="max-w-prose">
                     Лучший способ получить публичный PGP ключ Диди -
-                    это скачать его прямо с сайта dd Marketplace (из раздела "Помощь") через
+                    это скачать его прямо с сайта {{ $page->appName() }} (из раздела "Помощь") через
                     <a href="{{ url('tor-browser') }}" class="link">Tor Browser.</a>
                     Для работы с PGP потребуется компьютер.
                 </p>
@@ -49,7 +50,7 @@
     <x-section>
         <x-box>
 
-            <h1 class="title is-1 mb-4">Официальный список зеркал dd Marketplace</h1>
+            <h2 class="title is-2 mb-4">Официальный список зеркал {{ $page->appName() }}</h2>
 
             <div class="max-w-prose">
                 <x-code>{!! file_get_contents('mirrors.txt') !!}</x-code>
@@ -61,7 +62,7 @@
     <x-section>
         <x-box>
 
-            <h1 class="title is-1 mb-4">Публичный PGP-ключ dd Marketplace</h1>
+            <h2 class="title is-2 mb-4">Публичный PGP-ключ {{ $page->appName() }}</h2>
 
             <div class="max-w-prose">
                 <x-code>{!! file_get_contents('pgp.txt') !!}</x-code>

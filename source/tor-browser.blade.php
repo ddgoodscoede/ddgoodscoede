@@ -8,7 +8,7 @@
                 <div class="w-24 h-24 flex items-center">
                     <x-image
                         src="{{ $page->image('logo-short-2x.png') }}"
-                        alt="Логотип dd Marketplace"
+                        alt="Логотип {{ $page->appName() }}"
                     />
                 </div>
                 <div>+</div>
@@ -24,7 +24,7 @@
             <div class="mt-2 space-y-5">
 
                 <p class="max-w-prose">
-                    <strong>dd Marketplace</strong> работает в даркнете,
+                    <strong>{{ $page->appName() }}</strong> работает в даркнете,
                     т.е. запущен как скрытый сервис Тор (Tor Hidden Service),
                     также известный как Луковый сервис (Onion Service).
                     Это означает, что попасть на исходный сайт можно
@@ -66,14 +66,15 @@
                 @include('_partials.download-tor-browser')
 
                 <p class="max-w-prose">
-                    Интернет наполнен фальшивыми фишинговыми сайтами, выдающими себя за dd. Чтобы не попасться на удочку - всегда проверяй адрес сайта!
+                    Интернет наполнен фальшивыми фишинговыми сайтами, выдающими себя за dd.
+                    Чтобы не попасться на удочку - всегда проверяй адрес сайта!
                 </p>
 
                 <x-blockquote>
                     <p class="max-w-prose">Всегда проверяй адрес сайта!</p>
                 </x-blockquote>
 
-                <p class="max-w-prose">У <strong>dd Marketplace</strong> только один настоящий адрес в сети Тор:</p>
+                <p class="max-w-prose">У <strong>{{ $page->appName() }}</strong> только один настоящий адрес в сети Тор:</p>
 
                 @include('_partials.onion-address')
 

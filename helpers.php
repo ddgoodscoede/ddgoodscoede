@@ -24,7 +24,7 @@ return [
      * Copied from
      * https://github.com/tighten/jigsaw-blog-template/blob/main/config.php
      */
-    'getExcerpt' => function (PageVariable $page, $length = 255) {
+    'getExcerpt' => function (PageVariable $page, $length = 255): string {
         if ($page->excerpt) {
             return $page->excerpt;
         }
@@ -50,6 +50,13 @@ return [
         return strlen($cleaned) > $length
             ? preg_replace('/\s+?(\S+)?$/', '', $truncated) . '...'
             : $cleaned;
+    },
+
+    /**
+     * Get a properly formatted target application name.
+     */
+    'appName' => function (PageVariable $page): string {
+        return spaceToNbsp((string) $page['dd_name']);
     },
 
 ];
