@@ -21,8 +21,8 @@
 
         {{-- Page-specific --}}
         <link rel="canonical" href="{{ $page->getUrl() }}">
-        <title>{{ $page->title }}</title>
-        <meta name="description" content="{{ $page->description }}">
+        <title>{{ ($page['title'] ?? $page['default_title']) . $page['base_title'] }}</title>
+        <meta name="description" content="{{ $page['description'] ?? $page['default_description'] }}">
 
     </head>
 

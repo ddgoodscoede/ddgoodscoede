@@ -6,9 +6,14 @@ return [
     'production' => false,
     'baseUrl' => '',
 
-    // Default meta
-    'title' => 'Jigsaw',
-    'description' => 'Website description.',
+    /*
+     * Metas
+     */
+    // Added to the end of every page title
+    'base_title' => ' | Информация о dd Marketplace',
+    // Used when no page title or description provided
+    'default_title' => 'Как зайти на dd Marketplace',
+    'default_description' => 'Подробная информация о том, как зайти на dd Marketplace через Tor Browser или любой другой браузер. Зайти на dd. Ссылка на dd Marketplace. Актуальные зеркала dd Marketplace.',
 
     // URL prefixes to generate assets URLs
     'assets_url' => 'assets',
