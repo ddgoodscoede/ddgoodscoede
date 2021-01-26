@@ -41,6 +41,8 @@ return [
         'news' => [
             'path' => 'news',
             'sort' => 'date',
+            'extends' => '_layouts.news',
+            'section' => 'content',
         ],
     ],
 
