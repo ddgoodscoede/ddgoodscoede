@@ -40,7 +40,7 @@ return [
     'collections' => [
         'news' => [
             'path' => 'news',
-            'sort' => 'date',
+            'sort' => '-date',
             'extends' => '_layouts.news',
             'section' => 'content',
         ],
