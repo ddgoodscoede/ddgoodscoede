@@ -77,10 +77,15 @@
 
                 @include('_partials.onion-address')
 
-                <p class="max-w-prose">
-                    Или ты всегда можешь воспользоваться официальным Tor2Web сервисом по адресу
-                    <a href="{{ $page->clearnet_url }}" class="link">{{ $page->clearnet_address }}:</a>
-                </p>
+                <div>
+                    <p class="max-w-prose">
+                        Или ты всегда можешь воспользоваться официальным Tor2Web сервисом по адресу
+                        <a href="{{ $page->clearnet_url }}" class="link">{{ $page->clearnet_address }}:</a>
+                    </p>
+                    <div class="mt-2">
+                        @include('_partials.dd2web-button')
+                    </div>
+                </div>
 
             </div>
 
