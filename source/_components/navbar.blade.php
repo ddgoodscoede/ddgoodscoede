@@ -39,8 +39,18 @@
             <x-navbar.link href="{{ url('news') }}">
                 <span>Новости</span>
             </x-navbar.link>
-        </div>
 
+            <div class="group hover:bg-gray-50 hover:text-blue-600 cursor-pointer flex items-center">
+                <div class="py-2 px-3 flex items-center">
+                    <span>Ещё</span>
+                    <span class="chevron-down ml-2"></span>
+                </div>
+                <ul class="hidden group-hover:block">
+                    <li>Foobar!</li>
+                </ul>
+            </div>
+
+        </div>
 
         {{-- End --}}
         <div class="flex flex-nowrap items-stretch">
