@@ -17,9 +17,9 @@ description: Покупки на dd Marketplace. Как купить на Дид
                     Регион (страну и город) можно выбрать при регистрации и поменять в любой момент с помощью кнопки наверху сайта.
                 </x-p>
 
-                <div class="grid grid-cols-12 justify-center">
+                <div class="flex justify-center">
                     <x-screenshot
-                        class="col-span-12 md:col-span-8 lg:col-span-6"
+                        class="w-full md:w-2/3 lg:w-1/2"
                         src="{{ $page->image('dd-change-region.png') }}"
                         alt="Кнопка смены региона на Диди"
                     >Кнопка смены региона на Диди</x-screenshot>
@@ -31,9 +31,9 @@ description: Покупки на dd Marketplace. Как купить на Дид
                     Потом выбери понравившийся товар в любом магазине или через каталог.
                 </x-p>
 
-                <div class="grid grid-cols-12 justify-center">
+                <div class="flex justify-center">
                     <x-screenshot
-                        class="col-span-12 md:col-span-8 lg:col-span-6"
+                        class="w-full md:w-2/3 lg:w-1/2"
                         src="{{ $page->image('dd-purchase.png') }}"
                         alt="Блок покупки товара на Диди"
                     >Покупки на {{ $page->appName() }}</x-screenshot>
@@ -47,9 +47,9 @@ description: Покупки на dd Marketplace. Как купить на Дид
                     уточняй в конкретном магазине.
                 </x-p>
 
-                <div class="grid grid-cols-12 justify-center">
+                <div class="flex justify-center">
                     <x-screenshot
-                        class="col-span-12 md:col-span-8 lg:col-span-6"
+                        class="w-full md:w-2/3 lg:w-1/2"
                         src="{{ $page->image('dd-drop-search.png') }}"
                         alt="Страница поиска закладки"
                     >Страница поиска закладки</x-screenshot>

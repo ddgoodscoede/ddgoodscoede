@@ -12,12 +12,14 @@ description: Пополнение баланса на dd Marketplace. Оплат
 
             <div class="space-y-5">
 
-                <x-screenshot
-                    class="max-w-prose"
-                    href="{{ $page->clearnet_url }}"
-                    src="{{ $page->image('dd-balance.png') }}"
-                    alt="Скриншот кнопки пополнения баланса на {{ $page->appName() }}"
-                >Кнопка пополнения баланса на {{ $page->appName() }}</x-screenshot>
+                <div class="flex justify-center">
+                    <x-screenshot
+                        class="max-w-prose"
+                        href="{{ $page->clearnet_url }}"
+                        src="{{ $page->image('dd-balance.png') }}"
+                        alt="Скриншот кнопки пополнения баланса на {{ $page->appName() }}"
+                    >Кнопка пополнения баланса на {{ $page->appName() }}</x-screenshot>
+                </div>
 
                 <x-p>
                     Все сделки на Диди проводятся в биткоинах, пополнить свой баланс можно тоже только с помощью биткоинов. Это обеспечивает высокий уровень анонимности и безопасности, при соблюдении ряда простых правил.
