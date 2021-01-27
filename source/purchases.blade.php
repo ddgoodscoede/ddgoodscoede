@@ -19,7 +19,7 @@ description: Покупки на dd Marketplace. Как купить на Дид
 
                 <div class="grid grid-cols-12 justify-center">
                     <x-screenshot
-                        class="col-span-6"
+                        class="col-span-12 md:col-span-8 lg:col-span-6"
                         src="{{ $page->image('dd-change-region.png') }}"
                         alt="Кнопка смены региона на Диди"
                     >Кнопка смены региона на Диди</x-screenshot>
@@ -33,7 +33,7 @@ description: Покупки на dd Marketplace. Как купить на Дид
 
                 <div class="grid grid-cols-12 justify-center">
                     <x-screenshot
-                        class="col-span-6"
+                        class="col-span-12 md:col-span-8 lg:col-span-6"
                         src="{{ $page->image('dd-purchase.png') }}"
                         alt="Блок покупки товара на Диди"
                     >Покупки на {{ $page->appName() }}</x-screenshot>
@@ -49,7 +49,7 @@ description: Покупки на dd Marketplace. Как купить на Дид
 
                 <div class="grid grid-cols-12 justify-center">
                     <x-screenshot
-                        class="col-span-6"
+                        class="col-span-12 md:col-span-8 lg:col-span-6"
                         src="{{ $page->image('dd-drop-search.png') }}"
                         alt="Страница поиска закладки"
                     >Страница поиска закладки</x-screenshot>
