@@ -1,7 +1,7 @@
 <x-layouts.master :page="$page">
     <x-section>
 
-        <a href="{{ url('news') }}" class="link">
+        <a href="{{ url('news') }}" class="link pl-4 sm:pl-0">
             <x-icon><i class="fas fa-chevron-left"></i></x-icon>
             <span>К списку новостей</span>
         </a>
@@ -26,7 +26,7 @@
             </x-box>
         </article>
 
-        <div class="flex justify-between mt-4">
+        <div class="flex justify-between mt-4 px-4 sm:px-0">
             <a
                 class="button is-rounded"
                 href="{{ optional($page->getPrevious())->getPath() }}"

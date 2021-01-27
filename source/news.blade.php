@@ -10,7 +10,7 @@ pagination:
 
     <x-section>
 
-        <h1 class="title is-1 mb-8">Новости</h1>
+        <h1 class="title is-1 mb-8 pl-4 sm:pl-0">Новости</h1>
 
         <ul class="space-y-5">
 
@@ -22,7 +22,7 @@ pagination:
 
         </ul>
 
-        <x-pagination :pagination="$pagination" class="mt-8" />
+        <x-pagination :pagination="$pagination" class="mt-8 px-4 sm:px-0" />
 
     </x-section>
 
