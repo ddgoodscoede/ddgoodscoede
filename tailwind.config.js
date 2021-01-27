@@ -72,6 +72,23 @@ module.exports = {
         },
         extend: {
             /*
+             Additional options for various Tailwind utilities
+             */
+            // Custom values for aspect-ratio plugin. Required for various non-standard sized images.
+            aspectRatio: {
+                521: '521',
+                360: '360',
+            },
+            // Extending min-width utilities using a custom sizing scale (see above).
+            minWidth: smallSizingScale,
+            borderWidth: {
+                '3': '3px',
+            },
+            inset: {
+                // Used on dropdown menus
+                'full-skewed-4': 'calc(100% - 1rem)',
+            },
+            /*
              Typography plugin (.prose class) customization
              */
             typography: (theme) => ({
@@ -94,28 +111,17 @@ module.exports = {
                         },
                         // Nested elements customization example kept for reference
                         /*
-                        'a strong': {
-                            color: theme('colors.blue.700'),
-                            fontWeight: '600',
-                            '&:hover': {
-                                color: theme('colors.gray.900'),
-                            },
-                        },
-                        */
+                         'a strong': {
+                         color: theme('colors.blue.700'),
+                         fontWeight: '600',
+                         '&:hover': {
+                         color: theme('colors.gray.900'),
+                         },
+                         },
+                         */
                     },
                 },
             }),
-            // Custom values for aspect-ratio plugin
-            aspectRatio: {
-                521: '521',
-                360: '360',
-            },
-            // Extending min-width utilities using a custom sizing scale (see above).
-            minWidth: smallSizingScale,
-            // Some additional border options
-            borderWidth: {
-                '3': '3px',
-            },
         },
     },
     variants: {
@@ -127,6 +133,9 @@ module.exports = {
             margin: ['first', 'last'],
             padding: ['first', 'last'],
             textColor: ['active'],
+            transform: ['group-hover'],
+            translate: ['group-hover'],
+            visibility: ['group-hover'],
             zIndex: ['hover', 'active'],
         },
     },

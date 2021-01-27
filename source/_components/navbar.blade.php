@@ -40,15 +40,18 @@
                 <span>Новости</span>
             </x-navbar.link>
 
-            <div class="group hover:bg-gray-50 hover:text-blue-600 cursor-pointer flex items-center">
-                <div class="py-2 px-3 flex items-center">
-                    <span>Ещё</span>
-                    <span class="chevron-down ml-2"></span>
-                </div>
-                <ul class="hidden group-hover:block">
-                    <li>Foobar!</li>
-                </ul>
-            </div>
+            <x-navbar.dropdown>
+                <x-slot name="button">Ещё</x-slot>
+                <x-navbar.dropdown-item>
+                    <a href="">Foobar 1!</a>
+                </x-navbar.dropdown-item>
+                <x-navbar.dropdown-item>
+                    <a href="">Foobar 2!</a>
+                </x-navbar.dropdown-item>
+                <x-navbar.dropdown-item>
+                    <a href="">Foobar 2!</a>
+                </x-navbar.dropdown-item>
+            </x-navbar.dropdown>
 
         </div>
 
