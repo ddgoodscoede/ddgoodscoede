@@ -12,11 +12,11 @@
 
                     <p class="text-center">{{ carbon($page->date)->diffForHumans() }}</p>
 
-                    <h1 class="title is-1 mb-4 text-center">{{ $page->title }}</h1>
+                    <h1 class="title is-1 text-center">{{ $page->title }}</h1>
 
-                    <hr>
+                    <hr class="my-6 md:my-10">
 
-                    <div class="grid mt-4 justify-center">
+                    <div class="grid justify-center">
                         <div class="prose">
                             @yield('content')
                         </div>
