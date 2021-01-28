@@ -10,23 +10,28 @@ description: Браузер для Диди, скачать по прямой с
             <h1 class="title is-1 mb-4">Tor Browser</h1>
 
             <div class="flex items-center space-x-4">
-                <div class="w-24 h-24 flex items-center">
+                <div class="w-24 flex items-center">
                     <x-image
+                        class="w-full h-full"
                         src="{{ $page->image('logo-short-2x.png') }}"
                         alt="Логотип {{ $page->appName() }}"
                     />
                 </div>
-                <div>+</div>
-                <div class="w-28 h-24 flex items-center">
+                <div class="text-3xl">+</div>
+                <div class="w-28 flex items-center">
                     <x-image
+                        class="w-full h-full"
                         src="{{ $page->image('tor-color.svg') }}"
                         alt="Логотип Tor"
                     />
                 </div>
-                <div>= ♥️</div>
+                <div class="text-3xl">=</div>
+                <div>
+                    <x-icon class="text-red-500"><i class="fad fa-heart fa-5x"></i></x-icon>
+                </div>
             </div>
 
-            <div class="mt-2 space-y-5">
+            <div class="mt-6 space-y-5">
 
                 <x-p>
                     <strong>{{ $page->appName() }}</strong> работает в даркнете,
