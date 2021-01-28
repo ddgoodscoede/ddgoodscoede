@@ -1,7 +1,13 @@
-<figure class="block relative">
+@props(['src', 'alt'])
+
+<figure
+    {{ $attributes->merge([
+        'class' => 'block relative',
+    ]) }}
+>
     <img
-        {{ $attributes->merge([
-            'class' => 'block h-auto w-full m-0',
-        ]) }}
+        class="block h-auto w-full m-0"
+        src="{{ $src }}"
+        alt="{{ $alt ?? null }}"
     >
 </figure>
