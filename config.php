@@ -2,6 +2,11 @@
 
 return [
 
+    // Building
+    'build' => [
+        'destination' => 'build_local',
+    ],
+
     // General
     'production' => false,
     'baseUrl' => '',
