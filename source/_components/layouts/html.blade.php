@@ -26,7 +26,7 @@
 
     </head>
 
-    <body class="bg-gray-50 text-gray-600 font-sans antialiased {{ ! $page->production ? 'debug-screens' : null }}">
+    <body class="overflow-hidden bg-gray-50 text-gray-600 font-sans antialiased {{ ! $page->production ? 'debug-screens' : null }}">
 
         {{ $slot }}
 
