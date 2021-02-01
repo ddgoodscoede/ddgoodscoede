@@ -1,6 +1,6 @@
 <x-layouts.html :page="$page">
 
-    <div class="flex flex-col h-screen overflow-hidden">
+    <div class="flex flex-col h-screen overflow-hidden pb-10 md:pb-0">
 
         <x-navbar :page="$page" />
 
