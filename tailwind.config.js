@@ -86,6 +86,7 @@ module.exports = {
             },
             inset: {
                 // Used on dropdown menus
+                'full-skewed-2': 'calc(100% - 0.5rem)',
                 'full-skewed-4': 'calc(100% - 1rem)',
             },
             /*
