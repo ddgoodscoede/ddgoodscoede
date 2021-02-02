@@ -82,7 +82,7 @@
                     и подписан PGP ключом площадки, приводим его здесь:
                 </x-p>
                 <div class="max-w-prose">
-                <x-code>{!! file_get_contents('mirrors.txt') !!}</x-code>
+                    @include('_partials.mirrors')
                 </div>
                 <x-p>Подробности ищи в разделе "Помощь" на dd.</x-p>
             </div>

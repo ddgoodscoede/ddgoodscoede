@@ -58,7 +58,7 @@ description: Список актуальных зеркал dd Marketplace в Т
             <h2 class="title is-2 mb-4">Официальный список зеркал {{ $page->appName() }}</h2>
 
             <div class="max-w-prose">
-                <x-code>{!! file_get_contents('mirrors.txt') !!}</x-code>
+                @include('_partials.mirrors')
             </div>
 
         </x-box>
@@ -70,7 +70,7 @@ description: Список актуальных зеркал dd Marketplace в Т
             <h2 class="title is-2 mb-4">Публичный PGP-ключ {{ $page->appName() }}</h2>
 
             <div class="max-w-prose">
-                <x-code>{!! file_get_contents('pgp.txt') !!}</x-code>
+                @include('_partials.pgp')
             </div>
 
         </x-box>
