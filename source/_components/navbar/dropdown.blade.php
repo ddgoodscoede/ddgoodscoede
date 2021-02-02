@@ -12,8 +12,7 @@
     </div>
 
     <ul
-{{--        class="invisible opacity-0 top-full-skewed-4 group-hover:visible group-hover:opacity-100 group-hover:transform group-hover:translate-y-2 transition-all duration-100 min-w-full absolute border rounded-md bg-white py-2"--}}
-        class="top-full-skewed-4 min-w-full absolute border rounded-md bg-white py-2 transition-all duration-100 group-hover:visible group-hover:opacity-100 group-hover:transform group-hover:translate-y-2"
+        class="top-full-skewed-4 min-w-full absolute border rounded-md bg-white  transition-all duration-100 group-hover:visible group-hover:opacity-100 group-hover:transform group-hover:translate-y-2"
         x-bind:class="{ 'invisible opacity-0': !open, 'transform translate-y-2': open }"
         @click.away="open = false"
     >
