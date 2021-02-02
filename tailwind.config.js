@@ -1,4 +1,5 @@
 const colors = require('tailwindcss/colors')
+const plugin = require('tailwindcss/plugin')
 
 /*
  Custom smaller sizing scale for extending various utilities, like minWidth
@@ -127,16 +128,17 @@ module.exports = {
     },
     variants: {
         extend: {
-            backgroundColor: ['active'],
+            backgroundColor: ['active', 'activated'],
             borderWidth: ['active'],
             borderColor: ['active', 'focus'],
-            display: ['group-hover'],
+            display: ['group-hover', 'activated'],
             margin: ['first', 'last'],
+            opacity: ['activated'],
             padding: ['first', 'last'],
             textColor: ['active'],
-            transform: ['group-hover'],
-            translate: ['group-hover'],
-            visibility: ['group-hover'],
+            transform: ['group-hover', 'activated'],
+            translate: ['group-hover', 'activated'],
+            visibility: ['group-hover', 'activated'],
             zIndex: ['hover', 'active'],
         },
     },
@@ -146,5 +148,12 @@ module.exports = {
         require('@tailwindcss/aspect-ratio'),
         require('@tailwindcss/line-clamp'),
         require('tailwindcss-debug-screens'),
+        plugin(function({addVariant, e}) {
+            addVariant('activated', ({ modifySelectors, separator }) => {
+                modifySelectors(({ className }) => {
+                    return `.activator:checked ~ .${e(`activated${separator}${className}`)}`
+                })
+            })
+        }),
     ],
 };
