@@ -1,9 +1,9 @@
 <x-layouts.html :page="$page">
 
-    <div class="flex flex-col h-screen">
+    <x-body :page="$page">
 
         {{ $slot }}
 
-    </div>
+    </x-body>
 
 </x-layouts.html>

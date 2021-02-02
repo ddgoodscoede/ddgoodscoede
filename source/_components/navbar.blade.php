@@ -1,4 +1,4 @@
-<nav class="h-16 bg-white shadow z-30">
+<nav class="fixed top-0 h-16 w-full bg-white shadow z-30">
     <div class="container h-full mx-auto flex flex-nowrap items-stretch">
 
         {{-- Brand --}}
