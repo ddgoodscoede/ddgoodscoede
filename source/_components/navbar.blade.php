@@ -7,8 +7,11 @@
         {{-- Start - an array of links and dropdowns, responsive on desktop, hidden on touch. --}}
         @include('_partials.navbar.start')
 
-        {{-- End - a CTA button (always shown) and a burger menu (button shown only on touch). --}}
+        {{-- End - a CTA button - always shown. --}}
         @include('_partials.navbar.end')
+
+        {{-- Burger menu - shown only on touch. --}}
+        @include('_partials.navbar.burger')
 
     </div>
 </nav>
