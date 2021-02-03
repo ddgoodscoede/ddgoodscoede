@@ -39,6 +39,22 @@ smallSizingScale = {
     '80': '20rem',
     '96': '24rem',
 };
+// calc() options for height based on 100vh
+screenHeightScale = {
+    'screen-sub-4': 'calc(100vh - 1rem)',
+    'screen-sub-8': 'calc(100vh - 2rem)',
+    'screen-sub-12': 'calc(100vh - 3rem)',
+    'screen-sub-16': 'calc(100vh - 4rem)',
+    'screen-sub-20': 'calc(100vh - 5rem)',
+};
+// calc() options for width based on 100vw
+screenWidthScale = {
+    'screen-sub-4': 'calc(100vw - 1rem)',
+    'screen-sub-8': 'calc(100vw - 2rem)',
+    'screen-sub-12': 'calc(100vw - 3rem)',
+    'screen-sub-16': 'calc(100vw - 4rem)',
+    'screen-sub-20': 'calc(100vw - 5rem)',
+};
 
 /*
  Main Tailwind configuration
@@ -80,16 +96,24 @@ module.exports = {
                 521: '521',
                 360: '360',
             },
-            // Extending min-width utilities using a custom sizing scale (see above).
-            minWidth: smallSizingScale,
             borderWidth: {
                 '3': '3px',
+            },
+            height: screenHeightScale,
+            maxHeight: screenHeightScale,
+            // Extending min-width utilities using a custom sizing scale (see above).
+            minWidth: smallSizingScale,
+            rotate: {
+                '135' : '135deg',
+                '-135': '-135deg',
             },
             inset: {
                 // Used on dropdown menus
                 'full-skewed-2': 'calc(100% - 0.5rem)',
                 'full-skewed-4': 'calc(100% - 1rem)',
             },
+            width: screenWidthScale,
+            maxWidth: screenWidthScale,
             /*
              Typography plugin (.prose class) customization
              */
@@ -114,11 +138,11 @@ module.exports = {
                         // Nested elements customization example kept for reference
                         /*
                          'a strong': {
-                         color: theme('colors.blue.700'),
-                         fontWeight: '600',
-                         '&:hover': {
-                         color: theme('colors.gray.900'),
-                         },
+                             color: theme('colors.blue.700'),
+                             fontWeight: '600',
+                             '&:hover': {
+                                color: theme('colors.gray.900'),
+                             },
                          },
                          */
                     },
@@ -135,6 +159,8 @@ module.exports = {
             margin: ['first', 'last'],
             opacity: ['activated'],
             padding: ['first', 'last'],
+            rotate: ['group-hover'],
+            scale: ['group-hover'],
             textColor: ['active'],
             transform: ['group-hover', 'activated'],
             translate: ['group-hover', 'activated'],
@@ -148,6 +174,8 @@ module.exports = {
         require('@tailwindcss/aspect-ratio'),
         require('@tailwindcss/line-clamp'),
         require('tailwindcss-debug-screens'),
+        // Custom "activated" variant for implementing hidden checkbox CSS trick
+        // for toggling various dropdowns and menus.
         plugin(function({addVariant, e}) {
             addVariant('activated', ({ modifySelectors, separator }) => {
                 modifySelectors(({ className }) => {
