@@ -24,4 +24,47 @@
         pointer-events: none;
     }
 
+    /*
+     Special burger menu icon
+     */
+    .activator:checked ~ label .burger-icon {
+        span {
+            &:first-child {
+                transform: translateY(5px) rotate(45deg)
+            }
+            &:nth-child(2) {
+                opacity: 0;
+            }
+            &:last-child {
+                transform: translateY(-5px) rotate(-45deg);
+            }
+        }
+    }
+    .burger-icon {
+        position: relative;
+        width: 16px;
+        height: 16px;
+
+        span {
+            @apply transition;
+
+            background-color: currentColor;
+            display: block;
+            height: 1px;
+            width: 16px;
+            position: absolute;
+            left: calc(50% - 0.5rem);
+
+            &:first-child {
+                top: calc(50% - 6px);
+            }
+            &:nth-child(2) {
+                top: calc(50% - 1px);
+            }
+            &:last-child {
+                top: calc(50% + 4px);
+            }
+        }
+    }
+
 }
