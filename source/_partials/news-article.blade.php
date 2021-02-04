@@ -11,6 +11,14 @@
             >{{ $article->title }}</a>
         </h2>
 
+        @unless($article->imageSrc === null)
+            <x-image
+                class="rounded-md mb-4"
+                src="{{ $page->image('news/' . $article->imageSrc) }}"
+                alt="{{ $article->imageAlt ?? null }}"
+            />
+        @endisset
+
         <x-p class="line-clamp-3">
             {!! $article->getExcerpt(500) !!}
         </x-p>
