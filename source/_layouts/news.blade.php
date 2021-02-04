@@ -40,14 +40,16 @@
                 {{ $page->getPrevious() ? null : 'disabled' }}
             >
                 <x-icon class="mr-2"><i class="fas fa-long-arrow-alt-left"></i></x-icon>
-                <span>Предыдущая новость</span>
+                <span class="sm:hidden">Сюда</span>
+                <span class="hidden sm:inline">Предыдущая новость</span>
             </a>
             <a
                 class="button is-rounded"
                 href="{{ optional($page->getNext())->getPath() }}"
                 {{ $page->getNext() ? null : 'disabled' }}
             >
-                <span>Следующая новость</span>
+                <span class="sm:hidden">Туда</span>
+                <span class="hidden sm:inline">Следующая новость</span>
                 <x-icon class="ml-2"><i class="fas fa-long-arrow-alt-right"></i></x-icon>
             </a>
         </div>
