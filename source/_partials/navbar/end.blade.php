@@ -1,7 +1,4 @@
-<div
-    class="ml-auto flex flex-nowrap items-stretch"
-    x-data="{}"
->
+<div class="ml-auto flex flex-nowrap items-stretch">
 
     {{-- Buttons --}}
     <div class="py-2 px-3 flex items-center">

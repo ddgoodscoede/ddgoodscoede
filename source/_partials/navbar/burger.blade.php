@@ -1,4 +1,7 @@
-<div>
+<div
+    class="md:hidden"
+    x-data="{open: false}"
+>
 
     <x-burger.activator/>
     <x-burger.button/>
