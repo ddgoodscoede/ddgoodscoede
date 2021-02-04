@@ -2,7 +2,7 @@
 
 <figure
     {{ $attributes->merge([
-        'class' => 'block relative',
+        'class' => 'block relative overflow-hidden',
     ]) }}
 >
     <img
