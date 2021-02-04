@@ -9,18 +9,25 @@
         <article>
             <x-box class="mt-4">
 
+                @unless($page->imageSrc === null)
+                    <x-image
+                        class="rounded-md mb-4"
+                        src="{{ $page->image('news/' . $page->imageSrc) }}"
+                        alt="{{ $page->imageAlt ?? null }}"
+                    />
+                @endunless
 
-                    <p class="text-center">{{ carbon($page->date)->diffForHumans() }}</p>
+                <p class="text-center">{{ carbon($page->date)->diffForHumans() }}</p>
 
-                    <h1 class="title is-1 text-center">{{ $page->title }}</h1>
+                <h1 class="title is-1 text-center">{{ $page->title }}</h1>
 
-                    <hr class="my-6 md:my-10">
+                <hr class="my-6 md:my-10">
 
-                    <div class="grid justify-center">
-                        <div class="prose">
-                            @yield('content')
-                        </div>
+                <div class="grid justify-center">
+                    <div class="prose">
+                        @yield('content')
                     </div>
+                </div>
 
 
             </x-box>
