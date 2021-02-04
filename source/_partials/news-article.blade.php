@@ -27,7 +27,10 @@
             class="button is-small mt-4"
             href="{{ $article->getUrl() }}"
             title="Читать дальше - {{ $article->title }}"
-        >Читать дальше →</a>
+        >
+            <span>Читать дальше</span>
+            <x-icon class="ml-2"><i class="fas fa-long-arrow-alt-right"></i></x-icon>
+        </a>
 
     </x-box>
 </article>
