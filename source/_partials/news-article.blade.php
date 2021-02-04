@@ -17,7 +17,7 @@
                 src="{{ $page->image('news/' . $article->imageSrc) }}"
                 alt="{{ $article->imageAlt ?? null }}"
             />
-        @endisset
+        @endunless
 
         <x-p class="line-clamp-3">
             {!! $article->getExcerpt(500) !!}
