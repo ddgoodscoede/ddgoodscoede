@@ -31,7 +31,7 @@
                 </a>
             </div>
 
-            <div class="navbar-menu">
+            <div class="navbar-menu is-active">
                 <div class="navbar-start">
                     <a class="navbar-item">Home</a>
                     <a class="navbar-item">Documentation</a>
