@@ -7,14 +7,16 @@ return [
     /**
      * Generate a URL for an asset.
      */
-    'asset' => function (PageVariable $page, string $asset): string {
+    'asset' => function (PageVariable $page, string $asset): string
+    {
         return url(trim($page['assets_url'], '/') . '/' . trim($asset, '/'));
     },
 
     /**
      * Generate a URL for an image.
      */
-    'image' => function (PageVariable $page, string $image): string {
+    'image' => function (PageVariable $page, string $image): string
+    {
         return url(trim($page['images_url'], '/') . '/' . trim($image, '/'));
     },
 
@@ -24,7 +26,8 @@ return [
      * Copied from
      * https://github.com/tighten/jigsaw-blog-template/blob/main/config.php
      */
-    'getExcerpt' => function (PageVariable $page, $length = 255): string {
+    'getExcerpt' => function (PageVariable $page, $length = 255): string
+    {
         if ($page->excerpt) {
             return $page->excerpt;
         }
@@ -55,8 +58,24 @@ return [
     /**
      * Get a properly formatted target application name.
      */
-    'appName' => function (PageVariable $page): string {
+    'appName' => function (PageVariable $page): string
+    {
         return spaceToNbsp((string) $page['dd_name']);
     },
+
+    /**
+     * Generate a proper page title.
+     */
+    'getTitle' => function (PageVariable $page): string {
+        return ($page['title'] ?? $page['default_title']) . $page['base_title'];
+    },
+
+    /**
+     * Generate a proper page description.
+     */
+    'getDescription' => function (PageVariable $page): string
+    {
+        return $page['description'] ?? $page['default_description'];
+    }
 
 ];

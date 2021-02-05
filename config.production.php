@@ -8,4 +8,7 @@ return [
         'destination' => 'docs',
     ],
 
+    'domain' => 'ddgoodscoede.info',
+    'baseUrl' => 'https://ddgoodscoede.info',
+
 ];

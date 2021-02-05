@@ -14,7 +14,9 @@ return [
 
     // Base URL is used for generating links and in the sitemap.xml generation.
     // NOTE: No trailing slash.
-    'baseUrl' => 'https://ddgoodscoede.info',
+    // Production ones are set in config.production.php
+    'domain' => 'localhost:8000',
+    'baseUrl' => 'http://localhost:8000',
 
     /*
      * Metas
@@ -26,6 +28,8 @@ return [
     'default_description' => 'Подробная информация о том, как зайти на dd Marketplace через Tor Browser или любой другой браузер. Зайти на dd. Ссылка на dd Marketplace. Актуальные зеркала dd Marketplace.',
     // Default change frequency for sitemap.xml
     'default_change_frequency' => Sitemap::WEEKLY,
+    // Default og:type meta
+    'default_og_type' => 'website',
 
     // URL prefixes to generate assets URLs
     'assets_url' => 'assets',
@@ -56,6 +60,7 @@ return [
             'extends' => '_layouts.news',
             'section' => 'content',
             'changeFrequency' => Sitemap::MONTHLY,
+            'ogType' => 'article',
         ],
     ],
 
