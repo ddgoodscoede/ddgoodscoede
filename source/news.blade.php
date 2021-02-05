@@ -4,6 +4,7 @@ description: Авторские новости и переводы темати�
 pagination:
     collection: news
     perPage: 5
+changeFrequency: daily
 ---
 
 <x-layouts.master :page="$page">

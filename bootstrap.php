@@ -1,5 +1,6 @@
 <?php
 
+use App\Listeners\GenerateSitemap;
 use Carbon\Carbon;
 use Carbon\CarbonImmutable;
 use TightenCo\Jigsaw\Jigsaw;
@@ -24,3 +25,5 @@ $events->beforeBuild(function (Jigsaw $jigsaw) {
     CarbonImmutable::setLocale($defaultLocale);
     setlocale(LC_ALL, $jigsaw->getConfig('locales.' . $defaultLocale));
 });
+
+$events->afterBuild(GenerateSitemap::class);

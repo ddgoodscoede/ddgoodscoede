@@ -1,15 +1,20 @@
 <?php
 
+use samdark\sitemap\Sitemap;
+
 return [
 
-    // Building
+    /*
+     * Build process
+     */
+    'production' => false,
     'build' => [
         'destination' => 'build_local',
     ],
 
-    // General
-    'production' => false,
-    'baseUrl' => '',
+    // Base URL is used for generating links and in the sitemap.xml generation.
+    // NOTE: No trailing slash.
+    'baseUrl' => 'https://ddgoodscoede.info',
 
     /*
      * Metas
@@ -19,6 +24,8 @@ return [
     // Used when no page title or description provided
     'default_title' => 'Как зайти на dd Marketplace',
     'default_description' => 'Подробная информация о том, как зайти на dd Marketplace через Tor Browser или любой другой браузер. Зайти на dd. Ссылка на dd Marketplace. Актуальные зеркала dd Marketplace.',
+    // Default change frequency for sitemap.xml
+    'default_change_frequency' => Sitemap::WEEKLY,
 
     // URL prefixes to generate assets URLs
     'assets_url' => 'assets',
@@ -48,6 +55,7 @@ return [
             'sort' => '-date',
             'extends' => '_layouts.news',
             'section' => 'content',
+            'changeFrequency' => Sitemap::MONTHLY,
         ],
     ],
 
