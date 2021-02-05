@@ -70,7 +70,7 @@ description: Пополнение баланса на dd Marketplace. Оплат
     <x-section>
         <x-box>
 
-            <h1 class="title is-1 mb-4">Вывод средств</h1>
+            <h2 class="title is-1 mb-4">Вывод средств</h2>
 
             <div class="space-y-5">
 

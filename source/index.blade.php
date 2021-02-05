@@ -67,7 +67,7 @@
     <x-section>
         <x-box>
 
-            <h1 class="title is-1 mb-4">Безопасность</h1>
+            <h2 class="title is-1 mb-4">Безопасность</h2>
 
             <div class="space-y-5">
                 <x-p>

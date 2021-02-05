@@ -8,7 +8,7 @@ description: Список актуальных зеркал dd Marketplace в Т
     <x-section>
         <x-box>
 
-            <h1 class="title is-1 mb-4">Зеркала</h1>
+            <h1 class="title is-1 mb-4">Зеркала dd Marketplace</h1>
 
             <div class="space-y-5">
 
