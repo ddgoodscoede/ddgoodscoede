@@ -25,7 +25,7 @@ return [
     'base_title' => ' | Информация о dd Marketplace',
     // Used when no page title or description provided
     'default_title' => 'Как зайти на dd Marketplace',
-    'default_description' => 'Подробная информация о том, как зайти на dd Marketplace через Tor Browser или любой другой браузер. Зайти на dd. Ссылка на dd Marketplace. Актуальные зеркала dd Marketplace.',
+    'default_description' => 'Подробная информация о том, как зайти на dd Marketplace через Tor Browser или любой другой браузер. Зайти на dd. Ссылка на dd Marketplace. Зеркала dd Marketplace.',
     // Default change frequency for sitemap.xml
     'default_change_frequency' => Sitemap::WEEKLY,
     // Default og:type meta
