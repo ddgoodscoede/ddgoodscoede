@@ -14,7 +14,7 @@
         @unless($article->imageSrc === null)
             <x-image
                 class="rounded-md mb-4"
-                src="{{ $page->image('news/' . $article->imageSrc) }}"
+                src="{{ $article->titleImageUrl() }}"
                 alt="{{ $article->imageAlt ?? null }}"
             />
         @endunless

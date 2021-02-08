@@ -1,5 +1,6 @@
 ---
 title: Как покупать на dd Marketplace
+shortTitle: Как покупать
 description: Покупки на dd Marketplace. Как купить на Диди.
 ---
 

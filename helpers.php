@@ -1,5 +1,6 @@
 <?php
 
+use Spatie\SchemaOrg\Schema;
 use TightenCo\Jigsaw\PageVariable;
 
 return [
@@ -76,6 +77,5 @@ return [
     'getDescription' => function (PageVariable $page): string
     {
         return $page['description'] ?? $page['default_description'];
-    }
-
+    },
 ];

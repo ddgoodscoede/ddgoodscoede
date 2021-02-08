@@ -1,5 +1,6 @@
 ---
 title: Зеркала dd Marketplace
+shortTitle: Зеркала
 description: Список актуальных зеркал dd Marketplace в Торе и в Интернете. Как получить список зеркал dd Marketplace. PGP-ключ dd Marketplace.
 ---
 

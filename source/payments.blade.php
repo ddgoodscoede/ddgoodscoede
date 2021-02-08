@@ -1,5 +1,6 @@
 ---
 title: Как пополнить баланс на dd Marketplace
+shortTitle: Оплата
 description: Пополнение баланса на dd Marketplace. Оплата на Диди. Внести биткоины на dd.
 ---
 
