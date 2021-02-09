@@ -47,6 +47,8 @@
         {{-- Google Structured Data (schema.org) - Breadcrumbs --}}
         {!! $page->schemaBreadcrumbs() !!}
 
+        @include('_partials.metrika')
+
     </head>
 
     {{ $slot }}
